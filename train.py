@@ -41,7 +41,7 @@ def main():
     # 超参数设置
     batch_size             = 8
     epochs                 = 100
-    learning_rate          = 0.0001
+    learning_rate          = 0.001
     num_classes            = 102  
     
     # 指定训练与测试集划分地址以及类别地址
@@ -58,8 +58,8 @@ def main():
     
     # 定义损失函数以及优化器
     criterion              = nn.CrossEntropyLoss()
-    # optimizer              = Adam(model.parameters(), lr=learning_rate)
-    optimizer = optim.Adam(model.parameters(), lr=0.0001)
+    optimizer              = Adam(model.parameters(), lr=learning_rate)
+    # optimizer = optim.Adam(model.parameters(), lr=0.0001)
     
     # 用于记录历史最高精度，便于保存模型的权重
     best_acc = 0.0
