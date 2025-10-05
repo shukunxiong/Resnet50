@@ -1,0 +1,4 @@
+tqdm
+scikit-learn
+Pillow
+torch

@@ -39,7 +39,7 @@ def split_dataset(data_dir, train_dir, val_dir, train_ratio=0.8):
                     val_labels.write(f'{image_path} {category}\n')
 
 if __name__ == "__main__":
-    data_dir = 'your_caltech-101/101_ObjectCategories'
-    train_dir = 'your_caltech-101/train'  # Not used but kept for consistency
-    val_dir = 'your_caltech-101/val'  # Not used but kept for consistency
+    data_dir = 'dataset/101_ObjectCategories'
+    train_dir = 'dataset/train'  # Not used but kept for consistency
+    val_dir = 'dataset/val'  # Not used but kept for consistency
     split_dataset(data_dir, train_dir, val_dir)
