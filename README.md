@@ -1,5 +1,9 @@
 # Resnet50
 This is a simple implementation of ResNet50, trained on the Caltech101 dataset for a basic classification task, and configured with a custom Adam optimizer. The advantage of this project is that all parts of the network and optimizer, along with their functions, are clearly annotated in Chinese, making it suitable for beginners.
+
+# News！
+**2025.10.6** : The cosine annealing learning rate has been introduced into the self-made Adam optimizer.
+
 ## Installation
 ### 1. Clone the repository:
 Follow the steps below to set up the project on your local machine:
